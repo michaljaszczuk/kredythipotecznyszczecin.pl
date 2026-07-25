@@ -7,6 +7,7 @@ interface Props {
 
 const { title, description = 'Znajdź najlepszego doradcę kredytowego w Szczecinie. Porównaj oferty kredytów hipotecznych, sprawdź opinie i umów się na bezpłatną konsultację.', canonical } = Astro.props;
 const fullTitle = title === 'Strona główna' ? 'Kredyt Hipoteczny Szczecin - Doradcy Kredytowi, Porównanie Ofert' : `${title} | Kredyt Hipoteczny Szczecin`;
+const pageUrl = canonical || Astro.url.href;
 ---
 
 <!doctype html>
@@ -18,6 +19,19 @@ const fullTitle = title === 'Strona główna' ? 'Kredyt Hipoteczny Szczecin - Do
   <title>{fullTitle}</title>
   {canonical && <link rel="canonical" href={canonical} />}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={pageUrl} />
+  <meta property="og:site_name" content="KredytHipotecznySzczecin.pl" />
+  <meta property="og:locale" content="pl_PL" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
