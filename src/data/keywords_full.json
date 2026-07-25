@@ -1,0 +1,1280 @@
+[
+  {
+    "keyword": "kalkulator kredytu hipotecznego",
+    "search_volume": 110000,
+    "cpc": 0.38,
+    "competition": 0.74,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.8487
+  },
+  {
+    "keyword": "kredyt hipoteczny kalkulator",
+    "search_volume": 40500,
+    "cpc": 0.56,
+    "competition": 0.78,
+    "source_seed": "kredyt hipoteczny szczecin",
+    "intent_label": "informational",
+    "intent_probability": 0.7679
+  },
+  {
+    "keyword": "kalkulator nadpłat kredytu hipotecznego",
+    "search_volume": 14800,
+    "cpc": 0.61,
+    "competition": 0.02,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.6211
+  },
+  {
+    "keyword": "kalkulator nadpłaty kredytu hipotecznego",
+    "search_volume": 14800,
+    "cpc": 0.61,
+    "competition": 0.02,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.421
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego",
+    "search_volume": 8100,
+    "cpc": 2.05,
+    "competition": 0.8,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.6383
+  },
+  {
+    "keyword": "kalkulator raty kredytu hipotecznego",
+    "search_volume": 6600,
+    "cpc": 0.24,
+    "competition": 0.65,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7917
+  },
+  {
+    "keyword": "szczegółowy kalkulator kredytu hipotecznego",
+    "search_volume": 2900,
+    "cpc": 0.39,
+    "competition": 0.72,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7213
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego kalkulator",
+    "search_volume": 1900,
+    "cpc": 1.42,
+    "competition": 0.77,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.4832
+  },
+  {
+    "keyword": "nadpłata kredytu hipotecznego kalkulator",
+    "search_volume": 1900,
+    "cpc": 0.62,
+    "competition": 0.05,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.4775
+  },
+  {
+    "keyword": "kalkulator zdolności kredytu hipotecznego",
+    "search_volume": 1900,
+    "cpc": 0.54,
+    "competition": 0.71,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5912
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego ing",
+    "search_volume": 1900,
+    "cpc": 0.14,
+    "competition": 0.37,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5444
+  },
+  {
+    "keyword": "ing kalkulator kredytu hipotecznego",
+    "search_volume": 1900,
+    "cpc": 0.12,
+    "competition": 0.28,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7272
+  },
+  {
+    "keyword": "doradca kredytowy koszalin",
+    "search_volume": 1600,
+    "cpc": 4.51,
+    "competition": 0.17,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.8307
+  },
+  {
+    "keyword": "kalkulator rat kredytu hipotecznego",
+    "search_volume": 1600,
+    "cpc": 0.32,
+    "competition": 0.59,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.8265
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego pko",
+    "search_volume": 1300,
+    "cpc": 1.21,
+    "competition": 0.18,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.506
+  },
+  {
+    "keyword": "rata kredytu hipotecznego kalkulator",
+    "search_volume": 1300,
+    "cpc": 0.4,
+    "competition": 0.74,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7698
+  },
+  {
+    "keyword": "raty kredytu hipotecznego kalkulator",
+    "search_volume": 1300,
+    "cpc": 0.4,
+    "competition": 0.74,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.8155
+  },
+  {
+    "keyword": "kalkulator spłaty kredytu hipotecznego",
+    "search_volume": 1000,
+    "cpc": 0.47,
+    "competition": 0.07,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.864
+  },
+  {
+    "keyword": "kalkulator refinansowanie kredytu hipotecznego",
+    "search_volume": 880,
+    "cpc": 1.14,
+    "competition": 0.75,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7135
+  },
+  {
+    "keyword": "kalkulator refinansowania kredytu hipotecznego",
+    "search_volume": 880,
+    "cpc": 1.14,
+    "competition": 0.75,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7771
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego nadpłata",
+    "search_volume": 880,
+    "cpc": 0.67,
+    "competition": 0.02,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5387
+  },
+  {
+    "keyword": "mbank kalkulator kredytu hipotecznego",
+    "search_volume": 880,
+    "cpc": 0.51,
+    "competition": 0.6,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.7412
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego totalmoney",
+    "search_volume": 880,
+    "cpc": 0.02,
+    "competition": 0.28,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.4867
+  },
+  {
+    "keyword": "doradca kredytowy szczecin",
+    "search_volume": 720,
+    "cpc": 6.8,
+    "competition": 0.66,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.9573
+  },
+  {
+    "keyword": "najlepszy kredyt hipoteczny",
+    "search_volume": 720,
+    "cpc": 1.81,
+    "competition": 0.82,
+    "source_seed": "najlepszy kredyt hipoteczny",
+    "intent_label": "commercial",
+    "intent_probability": 0.7557
+  },
+  {
+    "keyword": "pko kalkulator kredytu hipotecznego",
+    "search_volume": 720,
+    "cpc": 1.47,
+    "competition": 0.22,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.72
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego pko bp",
+    "search_volume": 720,
+    "cpc": 1.32,
+    "competition": 0.2,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.6679
+  },
+  {
+    "keyword": "wcześniejsza spłata kredytu hipotecznego kalkulator",
+    "search_volume": 720,
+    "cpc": 0.78,
+    "competition": 0.1,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9173
+  },
+  {
+    "keyword": "uokik kalkulator nadpłaty kredytu hipotecznego",
+    "search_volume": 720,
+    "cpc": 0.73,
+    "competition": 0.02,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.4183
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego uokik",
+    "search_volume": 590,
+    "cpc": 0.82,
+    "competition": 0.02,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5947
+  },
+  {
+    "keyword": "ing refinansowanie kredytu hipotecznego",
+    "search_volume": 480,
+    "cpc": 2.73,
+    "competition": 0.68,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.7099
+  },
+  {
+    "keyword": "kalkulator nadpłaty kredytu hipotecznego gov",
+    "search_volume": 480,
+    "cpc": 0.54,
+    "competition": 0.02,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.5053
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego mbank",
+    "search_volume": 480,
+    "cpc": 0.41,
+    "competition": 0.55,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.7119
+  },
+  {
+    "keyword": "kalkulator zmiany oprocentowania kredytu hipotecznego",
+    "search_volume": 480,
+    "cpc": 0.34,
+    "competition": 0.05,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.578
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego w tym samym banku",
+    "search_volume": 390,
+    "cpc": 5.13,
+    "competition": 0.49,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.998
+  },
+  {
+    "keyword": "alior bank kalkulator kredytu hipotecznego",
+    "search_volume": 390,
+    "cpc": 1.99,
+    "competition": 0.32,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.8472
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego millennium",
+    "search_volume": 390,
+    "cpc": 1.51,
+    "competition": 0.32,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.5813
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego santander",
+    "search_volume": 390,
+    "cpc": 1.15,
+    "competition": 0.22,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.7678
+  },
+  {
+    "keyword": "santander kalkulator kredytu hipotecznego",
+    "search_volume": 390,
+    "cpc": 1.09,
+    "competition": 0.26,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.745
+  },
+  {
+    "keyword": "kalkulator wcześniejszej spłaty kredytu hipotecznego",
+    "search_volume": 390,
+    "cpc": 0.64,
+    "competition": 0.05,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.4581
+  },
+  {
+    "keyword": "darmowy kalkulator kredytu hipotecznego",
+    "search_volume": 390,
+    "cpc": 0.51,
+    "competition": 0.72,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5812
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego bankier",
+    "search_volume": 390,
+    "cpc": 0.06,
+    "competition": 0.28,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.51
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego gov",
+    "search_volume": 320,
+    "cpc": 0.59,
+    "competition": 0.11,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5541
+  },
+  {
+    "keyword": "doradca kredytowy hipoteczny",
+    "search_volume": 260,
+    "cpc": 9.98,
+    "competition": 0.84,
+    "source_seed": "kredyt hipoteczny szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.5092
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego ranking",
+    "search_volume": 260,
+    "cpc": 1.82,
+    "competition": 0.8,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.786
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego pekao",
+    "search_volume": 260,
+    "cpc": 1.5,
+    "competition": 0.27,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.7901
+  },
+  {
+    "keyword": "millennium kalkulator kredytu hipotecznego",
+    "search_volume": 260,
+    "cpc": 1.44,
+    "competition": 0.31,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.5107
+  },
+  {
+    "keyword": "mbank refinansowanie kredytu hipotecznego",
+    "search_volume": 260,
+    "cpc": 0.91,
+    "competition": 0.63,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.7544
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego bez wkładu własnego",
+    "search_volume": 260,
+    "cpc": 0.81,
+    "competition": 0.71,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5685
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego alior bank",
+    "search_volume": 260,
+    "cpc": 0.59,
+    "competition": 0.22,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.803
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego online",
+    "search_volume": 260,
+    "cpc": 0.53,
+    "competition": 0.75,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.6052
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego co to jest",
+    "search_volume": 210,
+    "cpc": 0.56,
+    "competition": 0.36,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.8005
+  },
+  {
+    "keyword": "kredyt hipoteczny szczecin",
+    "search_volume": 210,
+    "cpc": 0.53,
+    "competition": 0.26,
+    "source_seed": "kredyt hipoteczny szczecin",
+    "intent_label": "transactional",
+    "intent_probability": 0.4183
+  },
+  {
+    "keyword": "koszt kredytu hipotecznego kalkulator",
+    "search_volume": 210,
+    "cpc": 0.46,
+    "competition": 0.79,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.6226
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego rankomat",
+    "search_volume": 210,
+    "cpc": 0.36,
+    "competition": 0.5,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.4871
+  },
+  {
+    "keyword": "nadpłata kredytu hipotecznego pko bp kalkulator",
+    "search_volume": 210,
+    "cpc": 0,
+    "competition": 0.02,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.4284
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego ing",
+    "search_volume": 170,
+    "cpc": 2.1,
+    "competition": 0.7,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.7735
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego oferty",
+    "search_volume": 170,
+    "cpc": 1.94,
+    "competition": 0.73,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.9825
+  },
+  {
+    "keyword": "pekao kalkulator kredytu hipotecznego",
+    "search_volume": 170,
+    "cpc": 1.75,
+    "competition": 0.27,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.7013
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego bez wkladu",
+    "search_volume": 170,
+    "cpc": 0.71,
+    "competition": 0.68,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5205
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego bez wkładu",
+    "search_volume": 170,
+    "cpc": 0.71,
+    "competition": 0.68,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.6596
+  },
+  {
+    "keyword": "kalkulator odsetek kredytu hipotecznego",
+    "search_volume": 170,
+    "cpc": 0.45,
+    "competition": 0.17,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.8321
+  },
+  {
+    "keyword": "kalkulator odsetkowy kredytu hipotecznego",
+    "search_volume": 170,
+    "cpc": 0.45,
+    "competition": 0.17,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.8627
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego gofin",
+    "search_volume": 170,
+    "cpc": 0,
+    "competition": 0.01,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.6632
+  },
+  {
+    "keyword": "kalkulator nadpłaty kredytu hipotecznego uokik",
+    "search_volume": 170,
+    "cpc": 0,
+    "competition": 0.02,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.3975
+  },
+  {
+    "keyword": "pko bp refinansowanie kredytu hipotecznego",
+    "search_volume": 140,
+    "cpc": 2.57,
+    "competition": 0.72,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.4077
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego pko bp",
+    "search_volume": 140,
+    "cpc": 1.89,
+    "competition": 0.64,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9754
+  },
+  {
+    "keyword": "doradca kredytowy stargard",
+    "search_volume": 140,
+    "cpc": 1.8,
+    "competition": 0.57,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.8956
+  },
+  {
+    "keyword": "przeniesienie kredytu hipotecznego kalkulator",
+    "search_volume": 140,
+    "cpc": 1.78,
+    "competition": 0.81,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.932
+  },
+  {
+    "keyword": "santander refinansowanie kredytu hipotecznego",
+    "search_volume": 140,
+    "cpc": 1.78,
+    "competition": 0.69,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.3283
+  },
+  {
+    "keyword": "bnp paribas kalkulator kredytu hipotecznego",
+    "search_volume": 140,
+    "cpc": 0.96,
+    "competition": 0.33,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.8264
+  },
+  {
+    "keyword": "kalkulator nadpłaty kredytu hipotecznego pko bp",
+    "search_volume": 140,
+    "cpc": 0.83,
+    "competition": 0.05,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.5495
+  },
+  {
+    "keyword": "nadpłacanie kredytu hipotecznego kalkulator",
+    "search_volume": 140,
+    "cpc": 0.47,
+    "competition": 0.08,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.774
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego zdolność",
+    "search_volume": 140,
+    "cpc": 0.45,
+    "competition": 0.7,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5354
+  },
+  {
+    "keyword": "kalkulator kosztów kredytu hipotecznego",
+    "search_volume": 140,
+    "cpc": 0.41,
+    "competition": 0.44,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.6057
+  },
+  {
+    "keyword": "kalkulator kosztu kredytu hipotecznego",
+    "search_volume": 140,
+    "cpc": 0.41,
+    "competition": 0.44,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.6412
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego money",
+    "search_volume": 140,
+    "cpc": 0.02,
+    "competition": 0.35,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.859
+  },
+  {
+    "keyword": "kalkulator nadpłaty kredytu hipotecznego excel",
+    "search_volume": 140,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.8908
+  },
+  {
+    "keyword": "kalkulator przeniesienia kredytu hipotecznego",
+    "search_volume": 110,
+    "cpc": 1.88,
+    "competition": 0.8,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.6764
+  },
+  {
+    "keyword": "credit agricole kalkulator kredytu hipotecznego",
+    "search_volume": 110,
+    "cpc": 1.09,
+    "competition": 0.64,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.5874
+  },
+  {
+    "keyword": "uokik kalkulator kredytu hipotecznego",
+    "search_volume": 110,
+    "cpc": 0.7,
+    "competition": 0.04,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.693
+  },
+  {
+    "keyword": "kalkulator nadpłacania kredytu hipotecznego",
+    "search_volume": 110,
+    "cpc": 0.48,
+    "competition": 0.04,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7093
+  },
+  {
+    "keyword": "kalkulator oprocentowania kredytu hipotecznego",
+    "search_volume": 110,
+    "cpc": 0.43,
+    "competition": 0.11,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.8212
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego z wkładem własnym",
+    "search_volume": 110,
+    "cpc": 0.31,
+    "competition": 0.61,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.4815
+  },
+  {
+    "keyword": "alior bank refinansowanie kredytu hipotecznego",
+    "search_volume": 90,
+    "cpc": 5.18,
+    "competition": 0.67,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.8823
+  },
+  {
+    "keyword": "bnp paribas refinansowanie kredytu hipotecznego",
+    "search_volume": 90,
+    "cpc": 2.28,
+    "competition": 0.7,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.8472
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego mbank",
+    "search_volume": 90,
+    "cpc": 0.88,
+    "competition": 0.61,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9937
+  },
+  {
+    "keyword": "lendi kalkulator kredytu hipotecznego",
+    "search_volume": 90,
+    "cpc": 0.78,
+    "competition": 0.18,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.4776
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego z nadpłatą",
+    "search_volume": 90,
+    "cpc": 0.59,
+    "competition": 0.04,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.4344
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego otodom",
+    "search_volume": 90,
+    "cpc": 0.32,
+    "competition": 0.5,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "navigational",
+    "intent_probability": 0.5662
+  },
+  {
+    "keyword": "pośrednik kredytowy szczecin",
+    "search_volume": 70,
+    "cpc": 8.86,
+    "competition": 0.28,
+    "source_seed": "pośrednik kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.993
+  },
+  {
+    "keyword": "pko refinansowanie kredytu hipotecznego",
+    "search_volume": 70,
+    "cpc": 4.22,
+    "competition": 0.76,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.5198
+  },
+  {
+    "keyword": "pekao refinansowanie kredytu hipotecznego",
+    "search_volume": 70,
+    "cpc": 3.11,
+    "competition": 0.71,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.3352
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego ze stałym oprocentowaniem",
+    "search_volume": 70,
+    "cpc": 1.79,
+    "competition": 0.79,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.8464
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego santander",
+    "search_volume": 70,
+    "cpc": 1.79,
+    "competition": 0.78,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9848
+  },
+  {
+    "keyword": "kalkulator zwrotu prowizji kredytu hipotecznego",
+    "search_volume": 70,
+    "cpc": 0.61,
+    "competition": 0.4,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5141
+  },
+  {
+    "keyword": "kalkulator zwrotu odsetek kredytu hipotecznego",
+    "search_volume": 70,
+    "cpc": 0.55,
+    "competition": 0.42,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7862
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego porównywarka",
+    "search_volume": 70,
+    "cpc": 0.47,
+    "competition": 0.76,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.8381
+  },
+  {
+    "keyword": "kredytu hipotecznego kalkulator",
+    "search_volume": 70,
+    "cpc": 0.36,
+    "competition": 0.79,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.8373
+  },
+  {
+    "keyword": "kalkulator nadpłaty kredytu hipotecznego ing",
+    "search_volume": 70,
+    "cpc": 0.3,
+    "competition": 0.01,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.6475
+  },
+  {
+    "keyword": "totalmoney kalkulator kredytu hipotecznego",
+    "search_volume": 70,
+    "cpc": 0.03,
+    "competition": 0.39,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5069
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego excel",
+    "search_volume": 70,
+    "cpc": 0,
+    "competition": 0.02,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5846
+  },
+  {
+    "keyword": "kalkulator kredytu hipotecznego 2025",
+    "search_volume": 70,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7663
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego millennium",
+    "search_volume": 50,
+    "cpc": 2.92,
+    "competition": 0.68,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9127
+  },
+  {
+    "keyword": "velobank refinansowanie kredytu hipotecznego",
+    "search_volume": 50,
+    "cpc": 2.51,
+    "competition": 0.74,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.6429
+  },
+  {
+    "keyword": "najlepszy kredyt hipoteczny 2026",
+    "search_volume": 50,
+    "cpc": 1.82,
+    "competition": 0.84,
+    "source_seed": "najlepszy kredyt hipoteczny",
+    "intent_label": "commercial",
+    "intent_probability": 0.5927
+  },
+  {
+    "keyword": "nadpłata kredytu hipotecznego kalkulator online",
+    "search_volume": 50,
+    "cpc": 0.75,
+    "competition": 0.08,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.823
+  },
+  {
+    "keyword": "kalkulator raty kredytu hipotecznego ing",
+    "search_volume": 50,
+    "cpc": 0.03,
+    "competition": 0.22,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.5369
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego koszty",
+    "search_volume": 50,
+    "cpc": 0.03,
+    "competition": 0.23,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.919
+  },
+  {
+    "keyword": "kalkulator spłaty kredytu hipotecznego gov",
+    "search_volume": 50,
+    "cpc": 0,
+    "competition": 0.01,
+    "source_seed": "kalkulator kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.7082
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego pekao",
+    "search_volume": 40,
+    "cpc": 3.05,
+    "competition": 0.7,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9257
+  },
+  {
+    "keyword": "doradca kredytowy szczecinek",
+    "search_volume": 40,
+    "cpc": 3,
+    "competition": 0.6,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.9293
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego kalkulator ing",
+    "search_volume": 40,
+    "cpc": 1.86,
+    "competition": 0.64,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.6209
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego pko",
+    "search_volume": 30,
+    "cpc": 3.47,
+    "competition": 0.83,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9537
+  },
+  {
+    "keyword": "millennium refinansowanie kredytu hipotecznego",
+    "search_volume": 30,
+    "cpc": 2.85,
+    "competition": 0.71,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.4638
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego alior bank",
+    "search_volume": 30,
+    "cpc": 2.58,
+    "competition": 0.62,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9936
+  },
+  {
+    "keyword": "alior refinansowanie kredytu hipotecznego",
+    "search_volume": 20,
+    "cpc": 2.06,
+    "competition": 0.81,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.8698
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego kalkulator pko",
+    "search_volume": 20,
+    "cpc": 1.89,
+    "competition": 0.63,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.4364
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego w tym samym banku pko bp",
+    "search_volume": 20,
+    "cpc": 1.59,
+    "competition": 0.29,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9956
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego czy się opłaca",
+    "search_volume": 20,
+    "cpc": 1.27,
+    "competition": 0.55,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.8641
+  },
+  {
+    "keyword": "najlepszy kredyt hipoteczny 2025",
+    "search_volume": 20,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "najlepszy kredyt hipoteczny",
+    "intent_label": "commercial",
+    "intent_probability": 0.5439
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego w tym samym banku ing",
+    "search_volume": 20,
+    "cpc": 0,
+    "competition": 0.15,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9967
+  },
+  {
+    "keyword": "doradca kredytowy szczecin opinie",
+    "search_volume": 10,
+    "cpc": 4.15,
+    "competition": 0.76,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.804
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego kalkulator mbank",
+    "search_volume": 10,
+    "cpc": 1.63,
+    "competition": 0.48,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.3946
+  },
+  {
+    "keyword": "lendi zielonogórska szczecin",
+    "search_volume": 10,
+    "cpc": 1.28,
+    "competition": 0.26,
+    "source_seed": "kredyt hipoteczny szczecin",
+    "intent_label": "informational",
+    "intent_probability": 0.6732
+  },
+  {
+    "keyword": "doradca kredytowy szczecin forum",
+    "search_volume": 10,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "informational",
+    "intent_probability": 0.5213
+  },
+  {
+    "keyword": "najlepszy kredyt hipoteczny styczeń 2025",
+    "search_volume": 10,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "najlepszy kredyt hipoteczny",
+    "intent_label": "commercial",
+    "intent_probability": 0.6389
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego a wakacje kredytowe",
+    "search_volume": 10,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.9836
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego a wkład własny",
+    "search_volume": 10,
+    "cpc": 0,
+    "competition": 0.52,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.9064
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego rodzina na swoim",
+    "search_volume": 10,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.8381
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego 2020",
+    "search_volume": 10,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.4499
+  },
+  {
+    "keyword": "doradca kredytowy szczecin prawobrzeże",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.9164
+  },
+  {
+    "keyword": "doradca kredytowy konsolidacja szczecin",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.972
+  },
+  {
+    "keyword": "niezależny doradca kredytowy szczecin",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.9467
+  },
+  {
+    "keyword": "doradca kredytowy szczecin wojska polskiego",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "doradca kredytowy szczecin",
+    "intent_label": "commercial",
+    "intent_probability": 0.9482
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego 2017",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.7534
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego 2018",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.4628
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego 2019",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "informational",
+    "intent_probability": 0.4068
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego millenium",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.8677
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego bzwbk",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "transactional",
+    "intent_probability": 0.9592
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego z dodatkową gotówka",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.597
+  },
+  {
+    "keyword": "refinansowanie kredytu hipotecznego opinie",
+    "search_volume": 0,
+    "cpc": 0,
+    "competition": 0,
+    "source_seed": "refinansowanie kredytu hipotecznego",
+    "intent_label": "commercial",
+    "intent_probability": 0.6032
+  }
+]

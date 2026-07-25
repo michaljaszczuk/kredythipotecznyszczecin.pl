@@ -1,0 +1,133 @@
+---
+import Base from '../../layouts/Base.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import Sidebar from '../../components/Sidebar.astro';
+
+const articles = [
+  {
+    title: 'Kalkulator kredytu hipotecznego — oblicz ratę i zdolność kredytową',
+    slug: 'kalkulator-kredytu-hipotecznego',
+    description: 'Sprawdź, ile wyniesie rata Twojego kredytu hipotecznego. Dowiedz się, jak banki obliczają zdolność kredytową i co na nią wpływa.',
+    date: '2026-07-25',
+    category: 'Poradniki',
+  },
+  {
+    title: 'Refinansowanie kredytu hipotecznego — kiedy i jak to zrobić?',
+    slug: 'refinansowanie-kredytu-hipotecznego',
+    description: 'Refinansowanie może obniżyć ratę nawet o kilkaset złotych miesięcznie. Sprawdź, kiedy warto przenieść kredyt do innego banku.',
+    date: '2026-07-25',
+    category: 'Poradniki',
+  },
+  {
+    title: 'Najlepszy kredyt hipoteczny 2026 — ranking banków',
+    slug: 'najlepszy-kredyt-hipoteczny',
+    description: 'Porównanie ofert kredytów hipotecznych z najważniejszych banków w Polsce. Aktualne marże, oprocentowanie i warunki.',
+    date: '2026-07-25',
+    category: 'Rankingi',
+  },
+  {
+    title: 'Kredyt hipoteczny bez wkładu własnego — czy to możliwe?',
+    slug: 'kredyt-hipoteczny-bez-wkladu-wlasnego',
+    description: 'Programy rządowe i opcje kredytowania bez 20% wkładu własnego. Sprawdź aktualne warunki i wymagania banków.',
+    date: '2026-07-25',
+    category: 'Poradniki',
+  },
+  {
+    title: 'Wcześniejsza spłata kredytu hipotecznego — co musisz wiedzieć',
+    slug: 'wczesniejsza-splata-kredytu',
+    description: 'Nadpłata kredytu hipotecznego może zaoszczędzić dziesiątki tysięcy złotych. Poznaj zasady, kalkulator nadpłat i prawa konsumenta.',
+    date: '2026-07-25',
+    category: 'Poradniki',
+  },
+  {
+    title: 'Doradca kredytowy Szczecin — jak wybrać najlepszego?',
+    slug: 'doradca-kredytowy-szczecin-poradnik',
+    description: 'Na co zwrócić uwagę wybierając doradcę kredytowego w Szczecinie? Ile to kosztuje i jak wygląda proces współpracy.',
+    date: '2026-07-25',
+    category: 'Lokalne',
+  },
+  {
+    title: 'Zdolność kredytowa — jak ją obliczyć i zwiększyć?',
+    slug: 'zdolnosc-kredytowa',
+    description: 'Czym jest zdolność kredytowa, jak ją obliczają banki i co zrobić, żeby ją poprawić przed wnioskiem o kredyt hipoteczny.',
+    date: '2026-07-25',
+    category: 'Poradniki',
+  },
+  {
+    title: 'Rynek nieruchomości Szczecin 2026 — ceny i prognozy',
+    slug: 'rynek-nieruchomosci-szczecin',
+    description: 'Aktualne ceny mieszkań w Szczecinie z podziałem na dzielnice. Analiza trendów i prognozy na najbliższe miesiące.',
+    date: '2026-07-25',
+    category: 'Lokalne',
+  },
+  {
+    title: 'WIBOR a WIRON — co zmieni się w kredytach hipotecznych?',
+    slug: 'wibor-wiron-kredyty-hipoteczne',
+    description: 'Przejście z WIBOR na WIRON — co to oznacza dla obecnych i przyszłych kredytobiorców. Harmonogram zmian i wpływ na raty.',
+    date: '2026-07-25',
+    category: 'Aktualności',
+  },
+  {
+    title: 'Kredyt hipoteczny na budowę domu — krok po kroku',
+    slug: 'kredyt-hipoteczny-budowa-domu',
+    description: 'Kompletny przewodnik po kredycie na budowę domu. Transz, wymagane dokumenty, kosztorys i harmonogram wypłat.',
+    date: '2026-07-25',
+    category: 'Poradniki',
+  },
+];
+---
+
+<Base
+  title="Blog — Kredyt hipoteczny, poradniki i aktualności"
+  description="Blog o kredytach hipotecznych w Szczecinie. Poradniki, kalkulatory, rankingi banków i aktualności ze świata finansów."
+>
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Strona główna</a> <span>/</span> <span>Blog</span>
+      </nav>
+      <h1>Blog — kredyt hipoteczny i finanse</h1>
+      <p class="page-subtitle">Poradniki, kalkulatory i aktualności ze świata kredytów hipotecznych w Szczecinie i całej Polsce.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-with-sidebar">
+        <div class="main-content">
+          <div class="blog-grid">
+            {articles.map(article => (
+              <BlogCard {...article} />
+            ))}
+          </div>
+        </div>
+        <Sidebar />
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-header {
+    background: var(--color-bg-alt);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .breadcrumb { font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 0.75rem; }
+  .breadcrumb a { color: var(--color-text-muted); }
+  .breadcrumb a:hover { color: var(--color-primary); }
+  .breadcrumb span { margin: 0 0.3rem; }
+  .page-header h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+  .page-subtitle { color: var(--color-text-muted); }
+
+  .section { padding: 2rem 0; }
+  .content-with-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2rem;
+    align-items: start;
+  }
+  .blog-grid { display: grid; gap: 1.25rem; }
+
+  @media (max-width: 1024px) { .content-with-sidebar { grid-template-columns: 1fr; } }
+</style>

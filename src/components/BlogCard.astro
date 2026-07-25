@@ -1,0 +1,80 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  description: string;
+  date: string;
+  category: string;
+}
+
+const { title, slug, description, date, category } = Astro.props;
+---
+
+<article class="blog-card">
+  <div class="blog-card-body">
+    <span class="blog-category">{category}</span>
+    <h3 class="blog-title">
+      <a href={`/blog/${slug}`}>{title}</a>
+    </h3>
+    <p class="blog-excerpt">{description}</p>
+    <div class="blog-footer">
+      <time datetime={date}>{new Date(date).toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+      <a href={`/blog/${slug}`} class="read-more">Czytaj dalej →</a>
+    </div>
+  </div>
+</article>
+
+<style>
+  .blog-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .blog-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+  .blog-card-body { padding: 1.5rem; }
+
+  .blog-category {
+    display: inline-block;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+    margin-bottom: 0.75rem;
+  }
+  .blog-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  .blog-title a { color: var(--color-text); }
+  .blog-title a:hover { color: var(--color-primary); }
+
+  .blog-excerpt {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .blog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .blog-footer time {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+  .read-more {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+</style>

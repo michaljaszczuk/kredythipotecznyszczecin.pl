@@ -1,0 +1,75 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Kontakt"
+  description="Skontaktuj się z nami. Masz pytanie o katalog doradców kredytowych w Szczecinie? Napisz do nas."
+>
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Strona główna</a> <span>/</span> <span>Kontakt</span>
+      </nav>
+      <h1>Kontakt</h1>
+      <p class="page-subtitle">Masz pytanie lub chcesz dodać swój wpis do katalogu? Napisz do nas.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Napisz do nas</h3>
+            <p>Odpowiadamy w ciągu 24 godzin w dni robocze.</p>
+            <a href="mailto:kontakt@kredythipotecznyszczecin.pl" class="contact-link">
+              kontakt@kredythipotecznyszczecin.pl
+            </a>
+          </div>
+          <div class="info-card">
+            <h3>Dla doradców kredytowych</h3>
+            <p>Chcesz pojawić się w naszym katalogu lub zaktualizować swój profil? Napisz do nas z danymi swojej firmy.</p>
+          </div>
+          <div class="info-card">
+            <h3>Dla partnerów</h3>
+            <p>Zainteresowany współpracą reklamową lub partnerską? Skontaktuj się, a omówimy możliwości.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-header {
+    background: var(--color-bg-alt);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .breadcrumb { font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 0.75rem; }
+  .breadcrumb a { color: var(--color-text-muted); }
+  .breadcrumb a:hover { color: var(--color-primary); }
+  .breadcrumb span { margin: 0 0.3rem; }
+  .page-header h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+  .page-subtitle { color: var(--color-text-muted); }
+
+  .section { padding: 3rem 0; }
+  .contact-grid { max-width: 640px; }
+  .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+
+  .info-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .info-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .info-card p { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; }
+  .contact-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+</style>

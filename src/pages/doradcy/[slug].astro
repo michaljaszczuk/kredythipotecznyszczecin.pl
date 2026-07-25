@@ -1,0 +1,275 @@
+---
+import Base from '../../layouts/Base.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import listings from '../../data/listings.json';
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/ł/g, 'l')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '')
+    .substring(0, 80);
+}
+
+export function getStaticPaths() {
+  function slug(text: string): string {
+    return text
+      .toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/ł/g, 'l')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)/g, '')
+      .substring(0, 80);
+  }
+  return listings.map((listing: any) => ({
+    params: { slug: slug(listing.title) },
+    props: { listing },
+  }));
+}
+
+const { listing } = Astro.props;
+
+function renderStars(rating: number): string {
+  const full = Math.floor(rating);
+  const half = rating % 1 >= 0.5 ? 1 : 0;
+  const empty = 5 - full - half;
+  return '★'.repeat(full) + (half ? '½' : '') + '☆'.repeat(empty);
+}
+
+function formatHours(workHours: any): { day: string; hours: string }[] {
+  if (!workHours?.timetable) return [];
+  const days: Record<string, string> = {
+    monday: 'Poniedziałek', tuesday: 'Wtorek', wednesday: 'Środa',
+    thursday: 'Czwartek', friday: 'Piątek', saturday: 'Sobota', sunday: 'Niedziela',
+  };
+  return Object.entries(days).map(([key, label]) => {
+    const slots = workHours.timetable[key];
+    if (!slots || slots.length === 0) return { day: label, hours: 'Zamknięte' };
+    const s = slots[0];
+    const open = `${String(s.open.hour).padStart(2, '0')}:${String(s.open.minute).padStart(2, '0')}`;
+    const close = `${String(s.close.hour).padStart(2, '0')}:${String(s.close.minute).padStart(2, '0')}`;
+    return { day: label, hours: `${open} – ${close}` };
+  });
+}
+
+const hours = formatHours(listing.work_hours);
+const rating = listing.rating || 0;
+const reviewsCount = listing.reviews_count || 0;
+---
+
+<Base
+  title={listing.title}
+  description={`${listing.title} — doradca kredytowy w Szczecinie. Ocena ${rating}/5 na podstawie ${reviewsCount} opinii. Adres: ${listing.address}. Sprawdź profil i umów konsultację.`}
+>
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Strona główna</a> <span>/</span>
+        <a href="/doradcy">Doradcy</a> <span>/</span>
+        <span>{listing.title}</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-with-sidebar">
+        <div class="main-content">
+          <div class="profile-card">
+            <div class="profile-header">
+              <div class="profile-avatar">
+                {listing.title.charAt(0).toUpperCase()}
+              </div>
+              <div>
+                <h1 class="profile-title">{listing.title}</h1>
+                <span class="profile-category">{listing.category || 'Doradca kredytowy'}</span>
+              </div>
+            </div>
+
+            <div class="profile-rating">
+              <span class="stars">{renderStars(rating)}</span>
+              <span class="rating-value">{rating.toFixed(1)}</span>
+              <span class="reviews-count">({reviewsCount} opinii w Google)</span>
+            </div>
+
+            <div class="profile-details">
+              {listing.address && (
+                <div class="detail-row">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <div>
+                    <strong>Adres</strong>
+                    <p>{listing.address}</p>
+                  </div>
+                </div>
+              )}
+              {listing.phone && (
+                <div class="detail-row">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <div>
+                    <strong>Telefon</strong>
+                    <p><a href={`tel:${listing.phone}`}>{listing.phone}</a></p>
+                  </div>
+                </div>
+              )}
+              {listing.url && (
+                <div class="detail-row">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  <div>
+                    <strong>Strona WWW</strong>
+                    <p><a href={listing.url} target="_blank" rel="noopener">{listing.domain}</a></p>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {hours.length > 0 && (
+              <div class="work-hours">
+                <h3>Godziny otwarcia</h3>
+                <table>
+                  {hours.map(h => (
+                    <tr>
+                      <td>{h.day}</td>
+                      <td class={h.hours === 'Zamknięte' ? 'closed' : ''}>{h.hours}</td>
+                    </tr>
+                  ))}
+                </table>
+              </div>
+            )}
+
+            {(listing.latitude && listing.longitude) && (
+              <div class="map-placeholder">
+                <h3>Lokalizacja</h3>
+                <div class="map-embed">
+                  <iframe
+                    width="100%"
+                    height="300"
+                    style="border:0; border-radius: 8px;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src={`https://www.google.com/maps?q=${listing.latitude},${listing.longitude}&z=15&output=embed`}
+                    title={`Mapa: ${listing.title}`}
+                  ></iframe>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        <Sidebar />
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": listing.title,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": listing.address,
+      "addressLocality": "Szczecin",
+      "addressCountry": "PL",
+    },
+    "telephone": listing.phone || undefined,
+    "url": listing.url || undefined,
+    "aggregateRating": reviewsCount > 0 ? {
+      "@type": "AggregateRating",
+      "ratingValue": rating,
+      "reviewCount": reviewsCount,
+      "bestRating": 5,
+    } : undefined,
+    "geo": listing.latitude ? {
+      "@type": "GeoCoordinates",
+      "latitude": listing.latitude,
+      "longitude": listing.longitude,
+    } : undefined,
+  })} />
+</Base>
+
+<style>
+  .page-header {
+    background: var(--color-bg-alt);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .breadcrumb { font-size: 0.8rem; color: var(--color-text-muted); }
+  .breadcrumb a { color: var(--color-text-muted); }
+  .breadcrumb a:hover { color: var(--color-primary); }
+  .breadcrumb span { margin: 0 0.3rem; }
+
+  .section { padding: 2rem 0; }
+  .content-with-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .profile-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+  }
+
+  .profile-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+  .profile-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  .profile-title { font-size: 1.35rem; font-weight: 700; line-height: 1.3; }
+  .profile-category { font-size: 0.85rem; color: var(--color-text-muted); }
+
+  .profile-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .stars { color: var(--color-star); font-size: 1.1rem; letter-spacing: 1px; }
+  .rating-value { font-weight: 700; font-size: 1.1rem; }
+  .reviews-count { font-size: 0.85rem; color: var(--color-text-muted); }
+
+  .profile-details { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; }
+  .detail-row { display: flex; gap: 0.75rem; align-items: flex-start; }
+  .detail-row svg { color: var(--color-text-muted); flex-shrink: 0; margin-top: 2px; }
+  .detail-row strong { display: block; font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 0.15rem; }
+  .detail-row p { font-size: 0.95rem; }
+
+  .work-hours {
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .work-hours h3 { font-size: 1rem; margin-bottom: 0.75rem; }
+  .work-hours table { width: 100%; font-size: 0.875rem; }
+  .work-hours td { padding: 0.35rem 0; }
+  .work-hours td:first-child { color: var(--color-text-muted); width: 45%; }
+  .work-hours .closed { color: #ef4444; }
+
+  .map-placeholder {
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.5rem;
+  }
+  .map-placeholder h3 { font-size: 1rem; margin-bottom: 0.75rem; }
+
+  @media (max-width: 1024px) {
+    .content-with-sidebar { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .profile-card { padding: 1.25rem; }
+    .profile-header { flex-direction: column; align-items: flex-start; }
+  }
+</style>

@@ -1,0 +1,93 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import listings from '../../data/listings.json';
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/ł/g, 'l')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '')
+    .substring(0, 80);
+}
+
+const sortedListings = [...listings].sort((a, b) => (b.reviews_count || 0) - (a.reviews_count || 0));
+---
+
+<Base
+  title="Doradcy kredytowi Szczecin — katalog i opinie"
+  description={`Katalog ${listings.length} doradców kredytowych w Szczecinie. Porównaj opinie, oceny i oferty. Znajdź najlepszego eksperta kredytowego.`}
+>
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Strona główna</a> <span>/</span> <span>Doradcy kredytowi</span>
+      </nav>
+      <h1>Doradcy kredytowi w Szczecinie</h1>
+      <p class="page-subtitle">Przeglądaj {listings.length} sprawdzonych doradców kredytowych. Sortuj według ocen i liczby opinii.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-with-sidebar">
+        <div class="main-content">
+          <div class="listings-grid">
+            {sortedListings.map(listing => (
+              <ListingCard
+                title={listing.title}
+                slug={slugify(listing.title)}
+                address={listing.address}
+                phone={listing.phone || ''}
+                rating={listing.rating || 0}
+                reviewsCount={listing.reviews_count || 0}
+                category={listing.category || ''}
+              />
+            ))}
+          </div>
+        </div>
+        <Sidebar />
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-header {
+    background: var(--color-bg-alt);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .breadcrumb {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+  }
+  .breadcrumb a { color: var(--color-text-muted); }
+  .breadcrumb a:hover { color: var(--color-primary); }
+  .breadcrumb span { margin: 0 0.3rem; }
+
+  .page-header h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+  .page-subtitle { color: var(--color-text-muted); font-size: 1rem; }
+
+  .section { padding: 2rem 0; }
+
+  .content-with-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .listings-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (max-width: 1024px) {
+    .content-with-sidebar { grid-template-columns: 1fr; }
+  }
+</style>
