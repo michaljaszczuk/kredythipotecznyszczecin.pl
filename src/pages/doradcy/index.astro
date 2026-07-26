@@ -35,8 +35,16 @@ const sortedListings = [...listings].sort((a, b) => (b.reviews_count || 0) - (a.
     <div class="container">
       <div class="content-with-sidebar">
         <div class="main-content">
-          <div class="listings-grid">
+          <div class="sort-bar">
+            <span class="sort-label">Sortuj:</span>
+            <button class="sort-btn active" data-sort="reviews-desc" aria-pressed="true">Najwięcej opinii</button>
+            <button class="sort-btn" data-sort="rating-desc" aria-pressed="false">Najwyższa ocena</button>
+            <button class="sort-btn" data-sort="rating-asc" aria-pressed="false">Najniższa ocena</button>
+            <button class="sort-btn" data-sort="name-asc" aria-pressed="false">A–Z</button>
+          </div>
+          <div class="listings-grid" id="listings-grid">
             {sortedListings.map(listing => (
+              <div class="listing-wrapper" data-rating={listing.rating || 0} data-reviews={listing.reviews_count || 0} data-name={listing.title}>
               <ListingCard
                 title={listing.title}
                 slug={slugify(listing.title)}
@@ -46,6 +54,7 @@ const sortedListings = [...listings].sort((a, b) => (b.reviews_count || 0) - (a.
                 reviewsCount={listing.reviews_count || 0}
                 category={listing.category || ''}
               />
+              </div>
             ))}
           </div>
         </div>
@@ -87,7 +96,81 @@ const sortedListings = [...listings].sort((a, b) => (b.reviews_count || 0) - (a.
     gap: 1rem;
   }
 
+  .sort-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+  }
+  .sort-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-right: 0.25rem;
+  }
+  .sort-btn {
+    font-family: var(--font);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.375rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 100px;
+    background: #fff;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .sort-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  .sort-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+    font-weight: 600;
+  }
+
   @media (max-width: 1024px) {
     .content-with-sidebar { grid-template-columns: 1fr; }
   }
 </style>
+
+<script>
+  const grid = document.getElementById('listings-grid');
+  const buttons = document.querySelectorAll('.sort-btn');
+
+  function sortListings(sortKey: string) {
+    if (!grid) return;
+    const items = Array.from(grid.querySelectorAll('.listing-wrapper')) as HTMLElement[];
+
+    items.sort((a, b) => {
+      const ratingA = parseFloat(a.dataset.rating || '0');
+      const ratingB = parseFloat(b.dataset.rating || '0');
+      const reviewsA = parseInt(a.dataset.reviews || '0', 10);
+      const reviewsB = parseInt(b.dataset.reviews || '0', 10);
+      const nameA = (a.dataset.name || '').toLowerCase();
+      const nameB = (b.dataset.name || '').toLowerCase();
+
+      switch (sortKey) {
+        case 'reviews-desc': return reviewsB - reviewsA;
+        case 'rating-desc': return ratingB - ratingA || reviewsB - reviewsA;
+        case 'rating-asc': return ratingA - ratingB || reviewsA - reviewsB;
+        case 'name-asc': return nameA.localeCompare(nameB, 'pl');
+        default: return 0;
+      }
+    });
+
+    items.forEach(item => grid.appendChild(item));
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+      sortListings(btn.dataset.sort || '');
+    });
+  });
+</script>

@@ -8,20 +8,63 @@ import BlogPost from '../../layouts/BlogPost.astro';
   date="2026-07-25"
   category="Poradniki"
 >
-  <div class="placeholder-notice">
-    Artykuł w przygotowaniu. Wkrótce znajdziesz tu kompletny poradnik z kalkulatorem kredytu hipotecznego.
-  </div>
+  <p>Zanim złożysz wniosek o kredyt hipoteczny, warto samodzielnie oszacować wysokość raty i swoją zdolność kredytową. Pozwoli Ci to lepiej przygotować się do rozmowy z doradcą i realistycznie ocenić swoje możliwości finansowe.</p>
 
-  <h2>O czym będzie ten artykuł?</h2>
-  <p>W tym poradniku dowiesz się, jak obliczyć ratę kredytu hipotecznego, co wpływa na zdolność kredytową i jak porównywać oferty banków. Artykuł będzie zawierał interaktywny kalkulator kredytowy.</p>
+  <h2>Jak obliczyć ratę kredytu hipotecznego?</h2>
+  <p>Rata kredytu hipotecznego zależy od trzech głównych czynników: kwoty kredytu, okresu spłaty i oprocentowania. Oprocentowanie składa się ze stawki referencyjnej (WIBOR 3M lub 6M) oraz marży banku.</p>
+  <p>Przy aktualnych warunkach rynkowych (lipiec 2026) WIBOR 3M wynosi <strong>3,85%</strong>, a WIBOR 6M — <strong>3,90%</strong>. Stopa referencyjna NBP to <strong>3,75%</strong>. Marże banków zaczynają się od około 1,6–1,8% dla klientów z 20-procentowym wkładem własnym.</p>
 
-  <h2>Planowana zawartość</h2>
+  <h3>Przykładowa kalkulacja</h3>
+  <p>Dla kredytu o wartości <strong>400 000 zł</strong> na <strong>25 lat</strong> przy oprocentowaniu 5,65% (WIBOR 3M 3,85% + marża 1,80%):</p>
   <ul>
-    <li>Jak działa kalkulator kredytu hipotecznego</li>
-    <li>Raty równe vs. malejące — porównanie</li>
-    <li>Co wpływa na wysokość raty</li>
-    <li>Jak banki obliczają zdolność kredytową</li>
-    <li>WIBOR/WIRON i ich wpływ na oprocentowanie</li>
-    <li>Interaktywny kalkulator z porównaniem banków</li>
+    <li><strong>Rata równa (annuitetowa):</strong> ok. 2 490 zł/mies.</li>
+    <li><strong>Rata malejąca (pierwsza):</strong> ok. 3 220 zł/mies., stopniowo maleje</li>
+    <li><strong>Rata malejąca (ostatnia):</strong> ok. 1 360 zł/mies.</li>
   </ul>
+
+  <h2>Raty równe vs. malejące — co wybrać?</h2>
+  <p>To jedno z pierwszych pytań, które usłyszysz od doradcy kredytowego.</p>
+  <ul>
+    <li><strong>Raty równe</strong> — każda rata ma tę samą wysokość przez cały okres kredytowania (przy stałym oprocentowaniu). Łatwiej planować budżet, ale łączny koszt odsetek jest wyższy.</li>
+    <li><strong>Raty malejące</strong> — na początku raty są wyższe, ale z czasem spadają. Łączny koszt odsetek jest niższy, lecz wymagają wyższej zdolności kredytowej.</li>
+  </ul>
+  <p>Przy kredycie 400 000 zł na 25 lat różnica w łącznych kosztach odsetek między ratami równymi a malejącymi może wynosić nawet <strong>40 000–60 000 zł</strong> na korzyść rat malejących.</p>
+
+  <h2>Co wpływa na wysokość raty?</h2>
+  <ul>
+    <li><strong>Kwota kredytu</strong> — im wyższa, tym wyższa rata. Kwota zależy od ceny nieruchomości pomniejszonej o wkład własny.</li>
+    <li><strong>Okres kredytowania</strong> — dłuższy okres to niższa rata miesięczna, ale wyższy łączny koszt odsetek. Maksymalny okres to zwykle 30–35 lat.</li>
+    <li><strong>Oprocentowanie</strong> — składa się z WIBOR (lub w przyszłości POLSTR) + marża banku. Marża jest stała przez cały okres kredytu, natomiast WIBOR zmienia się co 3 lub 6 miesięcy.</li>
+    <li><strong>Ubezpieczenia</strong> — ubezpieczenie nieruchomości jest obowiązkowe. Część banków wymaga też ubezpieczenia na życie, co wpływa na łączny koszt.</li>
+    <li><strong>Prowizja</strong> — jednorazowa opłata za udzielenie kredytu (0–2% kwoty kredytu). Można ją doliczyć do kwoty kredytu.</li>
+  </ul>
+
+  <h2>Jak banki obliczają zdolność kredytową?</h2>
+  <p>Zdolność kredytowa to maksymalna kwota kredytu, jaką bank jest gotów Ci udzielić na podstawie analizy Twojej sytuacji finansowej. Banki stosują zasady wynikające z <strong>Rekomendacji S</strong> wydanej przez Komisję Nadzoru Finansowego (KNF).</p>
+
+  <h3>Główne czynniki:</h3>
+  <ul>
+    <li><strong>Dochody netto</strong> — stabilne, udokumentowane zarobki. Umowa o pracę na czas nieokreślony jest najkorzystniejsza.</li>
+    <li><strong>Istniejące zobowiązania</strong> — raty innych kredytów, karty kredytowe, limity w koncie (nawet niewykorzystane obniżają zdolność).</li>
+    <li><strong>Koszty utrzymania</strong> — banki przyjmują minimalne normy wydatków na życie zależne od liczby osób w gospodarstwie domowym.</li>
+    <li><strong>Wskaźnik DTI (Debt-to-Income)</strong> — stosunek łącznych miesięcznych zobowiązań do dochodu. Większość banków akceptuje DTI do 40–50% przy dochodach niższych i do 65% przy dochodach wyższych.</li>
+    <li><strong>Historia kredytowa w BIK</strong> — terminowe spłaty poprzednich zobowiązań zwiększają wiarygodność kredytową.</li>
+  </ul>
+
+  <h2>WIBOR, POLSTR i ich wpływ na oprocentowanie</h2>
+  <p>Większość kredytów hipotecznych w Polsce ma oprocentowanie zmienne, oparte na stawce WIBOR 3M lub 6M. Od 2027 roku WIBOR ma zostać zastąpiony nowym wskaźnikiem — <strong>POLSTR</strong> (dawniej nazywanym WIRON/WIRF). Pierwsze kredyty oparte na POLSTR pojawiają się na rynku już w 2026 roku.</p>
+  <p>Zmiana wskaźnika nie powinna drastycznie wpłynąć na wysokość rat, ponieważ POLSTR jest oparty na rzeczywistych transakcjach na rynku międzybankowym i historycznie kształtuje się na zbliżonym poziomie co WIBOR.</p>
+
+  <h2>Jak porównywać oferty banków?</h2>
+  <p>Nie porównuj samej marży — zwróć uwagę na <strong>RRSO (Rzeczywistą Roczną Stopę Oprocentowania)</strong>, która uwzględnia wszystkie koszty kredytu: marżę, prowizję, ubezpieczenia i opłaty dodatkowe.</p>
+  <p>Według rankingów z czerwca 2026 roku najniższe RRSO oferują Pekao SA (ok. 6,03%) i mBank (ok. 6,13%). Pamiętaj jednak, że warunki są ustalane indywidualnie — doradca kredytowy może wynegocjować lepsze parametry niż te dostępne w ofercie standardowej.</p>
+
+  <h2>Wskazówki przed złożeniem wniosku</h2>
+  <ol>
+    <li><strong>Sprawdź swoją historię w BIK</strong> — upewnij się, że nie ma tam błędnych wpisów.</li>
+    <li><strong>Spłać drobne zobowiązania</strong> — zamknij nieużywane karty kredytowe i limity w koncie.</li>
+    <li><strong>Przygotuj wkład własny</strong> — minimum 10% (z ubezpieczeniem UNWW) lub 20% wartości nieruchomości.</li>
+    <li><strong>Porównaj oferty kilku banków</strong> — skorzystaj z pomocy <a href="/doradcy">doradcy kredytowego</a>, który bezpłatnie porówna oferty z kilkunastu instytucji.</li>
+    <li><strong>Weź pod uwagę bufor bezpieczeństwa</strong> — rata nie powinna przekraczać 30–35% Twojego dochodu netto.</li>
+  </ol>
 </BlogPost>
