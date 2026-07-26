@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import ListingCard from '../components/ListingCard.astro';
 import Sidebar from '../components/Sidebar.astro';
+import FAQ from '../components/FAQ.astro';
 import listings from '../data/listings.json';
 
 function slugify(text: string): string {
@@ -88,6 +89,29 @@ const topListings = [...listings]
         </ul>
         <h3>Jak wybrać doradcę kredytowego w Szczecinie?</h3>
         <p>Zwróć uwagę na liczbę opinii i średnią ocenę w Google — to najlepszy wskaźnik jakości obsługi. Sprawdź, czy doradca współpracuje z szeroką gamą banków (im więcej, tym lepsze porównanie). W naszym katalogu znajdziesz pełne profile z adresami, telefonami i godzinami pracy.</p>
+
+        <FAQ items={[
+          {
+            question: "Ile kosztuje doradca kredytowy w Szczecinie?",
+            answer: "W zdecydowanej większości przypadków usługa doradcy kredytowego jest <strong>bezpłatna</strong> dla klienta. Doradca zarabia prowizję wypłacaną przez bank po podpisaniu umowy kredytowej. Nieliczni niezależni doradcy pobierają honorarium (1 000–5 000 zł), oferując w zamian pełną niezależność od banków."
+          },
+          {
+            question: "Ile trzeba zarabiać, żeby dostać kredyt hipoteczny w Szczecinie?",
+            answer: "Zależy od kwoty kredytu, zobowiązań i liczby osób w gospodarstwie domowym. Orientacyjnie: przy kredycie 300 000 zł potrzebujesz ok. 4 000–5 000 zł netto (singiel), a przy 500 000 zł — ok. 6 500–8 000 zł netto. Każdy bank liczy zdolność inaczej, dlatego warto sprawdzić oferty w kilku instytucjach."
+          },
+          {
+            question: "Jaki wkład własny jest wymagany do kredytu hipotecznego?",
+            answer: "Zgodnie z Rekomendacją S KNF wymagane jest <strong>20% wartości nieruchomości</strong>. Większość banków akceptuje też <strong>10%</strong> z ubezpieczeniem niskiego wkładu (UNWW, koszt 0,1–0,2% rocznie). W ramach programu Rodzinny Kredyt Mieszkaniowy możliwe jest uzyskanie kredytu bez wkładu dzięki gwarancji BGK do 100 000 zł."
+          },
+          {
+            question: "Jak długo trwa proces uzyskania kredytu hipotecznego?",
+            answer: "Od złożenia kompletnego wniosku do wypłaty środków mija zazwyczaj <strong>4–8 tygodni</strong>. Czas zależy od banku, kompletności dokumentów i obłożenia oddziału. Skorzystanie z doradcy kredytowego przyspiesza proces, ponieważ doradca dba o prawidłowe skompletowanie dokumentów od początku."
+          },
+          {
+            question: "Ile wynosi oprocentowanie kredytu hipotecznego w 2026 roku?",
+            answer: "W lipcu 2026 roku oprocentowanie zmienne kredytu hipotecznego wynosi ok. <strong>5,5–6,5%</strong> (WIBOR 3M 3,85% + marża banku 1,6–2,5%). Stopa referencyjna NBP to 3,75%. Najniższe RRSO oferują Pekao SA (ok. 6,03%) i mBank (ok. 6,13%). Warunki ustalane są indywidualnie."
+          }
+        ]} />
       </div>
     </div>
   </section>

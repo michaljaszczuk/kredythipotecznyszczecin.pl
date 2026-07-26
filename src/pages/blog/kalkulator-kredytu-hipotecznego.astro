@@ -1,5 +1,6 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import FAQ from '../../components/FAQ.astro';
 ---
 
 <BlogPost
@@ -67,4 +68,23 @@ import BlogPost from '../../layouts/BlogPost.astro';
     <li><strong>Porównaj oferty kilku banków</strong> — skorzystaj z pomocy <a href="/doradcy">doradcy kredytowego</a>, który bezpłatnie porówna oferty z kilkunastu instytucji.</li>
     <li><strong>Weź pod uwagę bufor bezpieczeństwa</strong> — rata nie powinna przekraczać 30–35% Twojego dochodu netto.</li>
   </ol>
+
+  <FAQ items={[
+    {
+      question: "Jak obliczyć ratę kredytu hipotecznego?",
+      answer: "Rata zależy od trzech czynników: kwoty kredytu, okresu spłaty i oprocentowania (WIBOR + marża banku). Przy kredycie 400 000 zł na 25 lat i oprocentowaniu 5,65% rata równa wynosi ok. 2 490 zł/mies. Dokładną ratę najłatwiej wyliczyć kalkulatorem kredytowym lub poprosić o symulację <a href='/doradcy'>doradcę kredytowego</a>."
+    },
+    {
+      question: "Czym różnią się raty równe od malejących?",
+      answer: "Przy <strong>ratach równych</strong> każda rata ma tę samą wysokość, co ułatwia planowanie budżetu, ale łączny koszt odsetek jest wyższy. Przy <strong>ratach malejących</strong> pierwsze raty są wyższe, ale sukcesywnie spadają, a łączna kwota odsetek jest niższa — różnica może wynosić 40 000–60 000 zł na korzyść rat malejących."
+    },
+    {
+      question: "Co to jest RRSO i dlaczego jest ważne?",
+      answer: "RRSO (Rzeczywista Roczna Stopa Oprocentowania) to wskaźnik uwzględniający wszystkie koszty kredytu: marżę, prowizję, ubezpieczenia i opłaty dodatkowe. Jest najlepszym narzędziem do porównywania ofert różnych banków, ponieważ sama marża nie oddaje pełnego kosztu kredytu."
+    },
+    {
+      question: "Ile wynosi oprocentowanie kredytu hipotecznego w 2026 roku?",
+      answer: "W lipcu 2026 roku oprocentowanie zmienne wynosi ok. 5,5–6,5% (WIBOR 3M 3,85% + marża 1,6–2,5%). Stopa referencyjna NBP to 3,75%. Najniższe RRSO na rynku oferują Pekao SA (ok. 6,03%) i mBank (ok. 6,13%). Warunki ustalane są indywidualnie — doradca kredytowy może wynegocjować lepsze parametry."
+    }
+  ]} />
 </BlogPost>

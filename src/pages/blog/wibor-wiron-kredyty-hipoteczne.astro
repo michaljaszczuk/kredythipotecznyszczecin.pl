@@ -1,5 +1,6 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import FAQ from '../../components/FAQ.astro';
 ---
 
 <BlogPost
@@ -54,4 +55,23 @@ import BlogPost from '../../layouts/BlogPost.astro';
   <h2>Czy POLSTR będzie korzystniejszy?</h2>
   <p>Sam w sobie — prawdopodobnie nie będzie ani korzystniejszy, ani gorszy od WIBOR. Kluczowe dla wysokości Twojej raty pozostają <strong>stopy procentowe NBP</strong> (obecnie stopa referencyjna 3,75%) i <strong>marża banku</strong>. Zmiana wskaźnika to zmiana techniczna — o ile spread korygujący zostanie prawidłowo obliczony, nie powinna wpłynąć na Twoją ratę.</p>
   <p>Jeśli masz pytania dotyczące wpływu zmiany na Twój kredyt, skonsultuj się z <a href="/doradcy">doradcą kredytowym</a>.</p>
+
+  <FAQ items={[
+    {
+      question: "Co to jest POLSTR i czym różni się od WIBOR?",
+      answer: "<strong>POLSTR (Polish Short-Term Rate)</strong> to nowy wskaźnik referencyjny, który zastąpi WIBOR. Kluczowa różnica: WIBOR opiera się na deklaracjach banków o gotowości pożyczania pieniędzy, a POLSTR — na <strong>rzeczywistych transakcjach</strong> na rynku międzybankowym. POLSTR jest wskaźnikiem overnight, a do kredytów będzie stosowany jako stopa składana (term rate)."
+    },
+    {
+      question: "Kiedy WIBOR zostanie zastąpiony przez POLSTR?",
+      answer: "Pierwsze kredyty oparte na POLSTR pojawiają się od II kwartału 2026. Pełne wycofanie WIBOR planowane jest na <strong>2027 rok</strong>. Istniejące umowy zostaną automatycznie przeliczone — nie musisz składać wniosków ani podpisywać aneksów."
+    },
+    {
+      question: "Czy zmiana WIBOR na POLSTR wpłynie na moją ratę?",
+      answer: "Przejście powinno być <strong>neutralne</strong> dla kredytobiorców. Do stawki POLSTR zostanie dodany spread korygujący, który wyrówna różnicę między wskaźnikami. Twoja rata nie powinna skoczyć w górę ani w dół z samego powodu zmiany wskaźnika. O wysokości raty nadal decydują stopy procentowe NBP i marża banku."
+    },
+    {
+      question: "Co muszę zrobić w związku ze zmianą wskaźnika z WIBOR na POLSTR?",
+      answer: "<strong>Nic</strong> — przejście nastąpi automatycznie. Nie musisz składać żadnych wniosków, podpisywać aneksów ani zmieniać banku. Bank ma obowiązek poinformować Cię o szczegółach przejścia. Nie warto też refinansować kredytu tylko z powodu zmiany wskaźnika."
+    }
+  ]} />
 </BlogPost>

@@ -1,5 +1,6 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import FAQ from '../../components/FAQ.astro';
 ---
 
 <BlogPost
@@ -73,4 +74,23 @@ import BlogPost from '../../layouts/BlogPost.astro';
 
   <h2>Podsumowanie</h2>
   <p>Nie istnieje jeden „najlepszy" kredyt hipoteczny dla wszystkich. Optymalny wybór zależy od Twojej sytuacji finansowej, wysokości wkładu własnego, preferencji co do rodzaju oprocentowania i dodatkowych potrzeb. Porównuj RRSO, a nie samą marżę, i nie bój się negocjować — szczególnie z pomocą doświadczonego <a href="/doradcy">doradcy kredytowego</a>.</p>
+
+  <FAQ items={[
+    {
+      question: "Jaki bank ma najniższą marżę kredytu hipotecznego w 2026 roku?",
+      answer: "W lipcu 2026 roku najniższe marże oferują Bank BPS, Pekao SA i Credit Agricole — szczególnie dla klientów z 20% wkładem własnym. Jednak sama marża nie oddaje pełnego kosztu kredytu. Pod względem RRSO najkorzystniejsze oferty mają Pekao SA (ok. 6,03%) i mBank (ok. 6,13%)."
+    },
+    {
+      question: "Czy lepszy jest kredyt ze stałym czy zmiennym oprocentowaniem?",
+      answer: "Zależy od Twoich oczekiwań co do stóp procentowych. <strong>Stałe oprocentowanie</strong> (na 5 lat) daje pewność co do wysokości raty. <strong>Zmienne</strong> — może spadać wraz z obniżkami stóp. Przy obecnym WIBOR 3M na poziomie 3,85% i perspektywie stabilizacji lub dalszych obniżek, oprocentowanie zmienne może być korzystniejsze."
+    },
+    {
+      question: "Jak negocjować lepsze warunki kredytu hipotecznego?",
+      answer: "Zbierz oferty z kilku banków i wykorzystaj je jako argument negocjacyjny. Wysoki wkład własny (powyżej 20%), stabilne dochody z umowy o pracę i czysta historia w BIK to silne atuty. <a href='/doradcy'>Doradca kredytowy</a> ma dostęp do ofert kilkunastu banków i może negocjować indywidualne warunki."
+    },
+    {
+      question: "Na co zwrócić uwagę przy porównywaniu kredytów hipotecznych?",
+      answer: "Porównuj <strong>RRSO</strong> (Rzeczywistą Roczną Stopę Oprocentowania), nie samą marżę. RRSO uwzględnia marżę, prowizję, koszt obowiązkowych ubezpieczeń i inne opłaty. Sprawdź też, czy niska marża nie jest uwarunkowana zakupem dodatkowych produktów (cross-selling), które podnoszą łączny koszt."
+    }
+  ]} />
 </BlogPost>

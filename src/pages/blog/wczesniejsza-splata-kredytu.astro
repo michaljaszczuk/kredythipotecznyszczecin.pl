@@ -1,5 +1,6 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import FAQ from '../../components/FAQ.astro';
 ---
 
 <BlogPost
@@ -65,4 +66,23 @@ import BlogPost from '../../layouts/BlogPost.astro';
     <li><strong>Warto</strong> — gdy masz nadwyżkę finansową, która nie jest Ci potrzebna na inne cele, szczególnie we wczesnych latach kredytu (gdy odsetki stanowią największą część raty).</li>
     <li><strong>Nie warto</strong> — jeśli mógłbyś te pieniądze zainwestować z wyższą stopą zwrotu niż oprocentowanie kredytu, lub jeśli nie masz poduszki bezpieczeństwa (minimum 3–6 miesięcy wydatków).</li>
   </ul>
+
+  <FAQ items={[
+    {
+      question: "Czy bank może odmówić wcześniejszej spłaty kredytu hipotecznego?",
+      answer: "Nie. Zgodnie z ustawą o kredycie hipotecznym z 2017 roku, bank <strong>nie może odmówić</strong> przyjęcia wcześniejszej spłaty — ani częściowej (nadpłaty), ani całkowitej. To prawo przysługuje kredytobiorcy w każdym momencie trwania umowy."
+    },
+    {
+      question: "Ile kosztuje wcześniejsza spłata kredytu hipotecznego?",
+      answer: "Przy oprocentowaniu zmiennym bank może pobrać opłatę max <strong>3% spłacanej kwoty</strong>, ale tylko w ciągu pierwszych 36 miesięcy. <strong>Po 3 latach</strong> bank nie może pobierać żadnej opłaty za wcześniejszą spłatę. Przy stałym oprocentowaniu bank może naliczać rekompensatę przez cały okres stałej stopy."
+    },
+    {
+      question: "Czy lepiej skrócić okres kredytowania czy obniżyć ratę?",
+      answer: "<strong>Skrócenie okresu</strong> jest finansowo korzystniejsze — oszczędzasz więcej na odsetkach. <strong>Obniżenie raty</strong> daje większą elastyczność w budżecie. Przykładowo, nadpłata 50 000 zł po 5 latach (skrócenie okresu) pozwala zaoszczędzić 65 000–80 000 zł na odsetkach i skrócić kredyt o ok. 4 lata."
+    },
+    {
+      question: "Czy przy wcześniejszej spłacie należy się zwrot prowizji?",
+      answer: "Według najnowszych wyroków TSUE (C-76/22 z 2024 r. i C-472/23 z 2025 r.) — jeśli z umowy nie wynika jasno, że prowizja jest kosztem jednorazowym niezależnym od okresu umowy, to przy wcześniejszej spłacie <strong>należy się proporcjonalny zwrot</strong>. Warto złożyć reklamację do banku."
+    }
+  ]} />
 </BlogPost>

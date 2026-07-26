@@ -1,5 +1,6 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import FAQ from '../../components/FAQ.astro';
 ---
 
 <BlogPost
@@ -61,4 +62,23 @@ import BlogPost from '../../layouts/BlogPost.astro';
     <li><strong>Okres przejściowy</strong> — przez kilka tygodni (do wpisu nowej hipoteki) bank może naliczać podwyższoną marżę.</li>
     <li><strong>Zmiana wskaźnika referencyjnego</strong> — jeśli obecny kredyt jest oparty na WIBOR 6M, a nowy na WIBOR 3M, rata może różnie reagować na zmiany stóp procentowych.</li>
   </ul>
+
+  <FAQ items={[
+    {
+      question: "Kiedy opłaca się refinansować kredyt hipoteczny?",
+      answer: "Refinansowanie opłaca się, gdy różnica w marży wynosi co najmniej 0,75–1 punkt procentowy, miesięczna oszczędność to minimum 100–200 zł, koszty zmiany zwrócą się w ciągu 2–3 lat, a do końca spłaty pozostaje więcej niż 5 lat."
+    },
+    {
+      question: "Ile kosztuje refinansowanie kredytu hipotecznego?",
+      answer: "Łączne koszty wynoszą <strong>1 100–9 000 zł</strong> i obejmują: wycenę nieruchomości (500–1 800 zł), opłatę sądową za wpis/wykreślenie hipoteki (450 zł), taksę notarialną (200–500 zł) oraz ewentualną prowizję za wcześniejszą spłatę w starym banku (max 3% w pierwszych 36 miesiącach)."
+    },
+    {
+      question: "Ile razy można refinansować kredyt hipoteczny?",
+      answer: "Nie ma ustawowego limitu — kredyt można refinansować wielokrotnie. Niektóre banki mogą jednak niechętnie podchodzić do refinansowania kredytów, które były już wcześniej przenoszone. Każdorazowo bank sprawdza zdolność kredytową od nowa."
+    },
+    {
+      question: "Czy zamiast refinansowania mogę renegocjować warunki w swoim banku?",
+      answer: "Tak, renegocjacja (aneks do umowy) jest tańsza i szybsza niż pełne refinansowanie — nie wymaga nowej wyceny, wpisu hipotecznego ani kosztów notarialnych. Warto przedstawić bankowi konkurencyjną ofertę jako argument negocjacyjny."
+    }
+  ]} />
 </BlogPost>

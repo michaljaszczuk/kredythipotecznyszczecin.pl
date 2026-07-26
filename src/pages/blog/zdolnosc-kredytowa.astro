@@ -1,5 +1,6 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import FAQ from '../../components/FAQ.astro';
 ---
 
 <BlogPost
@@ -79,4 +80,23 @@ import BlogPost from '../../layouts/BlogPost.astro';
     <li><strong>Mieszkanie 50 m² (rynek wtórny):</strong> ~500 000 zł, kredyt z 20% wkładem: 400 000 zł.</li>
     <li><strong>Mieszkanie 50 m² (rynek pierwotny):</strong> ~655 000 zł, kredyt z 20% wkładem: 524 000 zł.</li>
   </ul>
+
+  <FAQ items={[
+    {
+      question: "Jak banki obliczają zdolność kredytową?",
+      answer: "Banki stosują modele scoringowe zgodne z Rekomendacją S KNF. Analizują: <strong>dochody netto</strong> i formę zatrudnienia, <strong>istniejące zobowiązania</strong> (kredyty, karty, limity), <strong>koszty utrzymania</strong> (normy zależne od liczby osób w gospodarstwie) oraz <strong>historię kredytową w BIK</strong>. Kluczowy jest wskaźnik DTI — stosunek zobowiązań do dochodów."
+    },
+    {
+      question: "Ile trzeba zarabiać, żeby dostać kredyt hipoteczny na 400 000 zł?",
+      answer: "Przy kredycie 400 000 zł na 25 lat (rata ok. 2 490 zł) potrzebujesz orientacyjnie <strong>5 500–7 000 zł netto</strong> (singiel bez zobowiązań) lub <strong>7 000–9 000 zł netto</strong> (rodzina 2+1). Dokładna kwota zależy od banku, formy zatrudnienia, zobowiązań i miejsca zamieszkania."
+    },
+    {
+      question: "Co obniża zdolność kredytową?",
+      answer: "Najczęstsze przyczyny to: <strong>nieużywane karty kredytowe i limity</strong> (bank zakłada pełne wykorzystanie), kredyty ratalne (nawet te z reklam &laquo;raty 0%&raquo;), krótki staż pracy, duża liczba zapytań do BIK w krótkim czasie oraz niestabilna forma zatrudnienia (umowa zlecenie, świeża działalność)."
+    },
+    {
+      question: "Jak szybko można zwiększyć zdolność kredytową?",
+      answer: "Najszybszy sposób to <strong>zamknięcie nieużywanych kart kredytowych i limitów</strong> — efekt widoczny natychmiast. Spłata drobnych zobowiązań, dodanie współkredytobiorcy lub zwiększenie wkładu własnego też pomagają od razu. Poprawa historii w BIK wymaga minimum 6–12 miesięcy terminowych spłat."
+    }
+  ]} />
 </BlogPost>

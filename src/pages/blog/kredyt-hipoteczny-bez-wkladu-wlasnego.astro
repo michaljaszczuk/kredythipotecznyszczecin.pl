@@ -1,5 +1,6 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import FAQ from '../../components/FAQ.astro';
 ---
 
 <BlogPost
@@ -62,4 +63,23 @@ import BlogPost from '../../layouts/BlogPost.astro';
 
   <h2>Podsumowanie</h2>
   <p>Kredyt hipoteczny bez wkładu własnego jest możliwy w 2026 roku dzięki programowi Rodzinny Kredyt Mieszkaniowy. Jeśli nie spełniasz warunków RKM, rozważ zgromadzenie minimum 10% wkładu — to otwiera drzwi do ofert w większości banków. Niezależnie od sytuacji, warto skonsultować się z doradcą, który pomoże znaleźć optymalne rozwiązanie.</p>
+
+  <FAQ items={[
+    {
+      question: "Czy można dostać kredyt hipoteczny bez wkładu własnego w 2026 roku?",
+      answer: "Tak, w ramach programu <strong>Rodzinny Kredyt Mieszkaniowy (RKM)</strong>. Gwarancja wkładu własnego od BGK może wynieść do 100 000 zł, zastępując brakujący wkład. Musisz jednak mieć zdolność kredytową, nie posiadać innej nieruchomości i zmieścić się w limitach cenowych."
+    },
+    {
+      question: "Ile wynosi minimalny wkład własny do kredytu hipotecznego?",
+      answer: "Rekomendacja S KNF wskazuje <strong>20% wartości nieruchomości</strong>. W praktyce większość banków akceptuje <strong>10%</strong> z ubezpieczeniem niskiego wkładu własnego (UNWW), które kosztuje 0,1–0,2% rocznie od brakującej kwoty do 20%."
+    },
+    {
+      question: "Co może być wkładem własnym do kredytu hipotecznego?",
+      answer: "Nie tylko gotówka na koncie. Banki akceptują: <strong>działkę budowlaną</strong> (jej wartość), środki z książeczki mieszkaniowej, darowiznę od rodziny (z oświadczeniem), a także wcześniejszą wpłatę do dewelopera przy zakupie mieszkania z rynku pierwotnego."
+    },
+    {
+      question: "Czym jest spłata rodzinna w programie RKM?",
+      answer: "Jeśli w trakcie spłaty kredytu RKM powiększy się Twoja rodzina, BGK spłaci część kapitału: <strong>20 000 zł</strong> przy drugim dziecku i <strong>60 000 zł</strong> przy trzecim i każdym kolejnym. Kwoty pomniejszają saldo kredytu, co przekłada się na niższe raty."
+    }
+  ]} />
 </BlogPost>

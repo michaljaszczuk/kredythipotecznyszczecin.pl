@@ -1,5 +1,6 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import FAQ from '../../components/FAQ.astro';
 ---
 
 <BlogPost
@@ -65,4 +66,23 @@ import BlogPost from '../../layouts/BlogPost.astro';
     <li>Chcesz refinansować kredyt i sam potrafisz porównać 2–3 oferty.</li>
   </ul>
   <p>Nawet w tych przypadkach konsultacja z doradcą jest bezpłatna i może ujawnić opcje, o których nie wiedziałeś.</p>
+
+  <FAQ items={[
+    {
+      question: "Ile kosztuje doradca kredytowy?",
+      answer: "W zdecydowanej większości przypadków — <strong>nic</strong>. Doradcy kredytowi zarabiają prowizję od banku po podpisaniu umowy kredytowej. Klient nie ponosi żadnych kosztów. Wyjątkiem są nieliczni niezależni doradcy pobierający honorarium bezpośrednio od klienta (zwykle 1 000–5 000 zł)."
+    },
+    {
+      question: "Z iloma bankami współpracuje doradca kredytowy?",
+      answer: "Dobry doradca współpracuje z minimum <strong>10–15 bankami</strong>. Im więcej banków, tym lepsze porównanie ofert. Jeśli doradca oferuje porównanie z zaledwie 3–4 bankami, to raczej agent jednego banku niż niezależny ekspert."
+    },
+    {
+      question: "Czym różni się doradca od pośrednika kredytowego?",
+      answer: "W praktyce oba terminy są używane zamiennie. Formalnie <strong>pośrednik</strong> to podmiot wpisany do rejestru KNF, który w imieniu banku prezentuje oferty. <strong>Doradca</strong> doradza klientowi w wyborze najlepszej oferty. Większość firm na rynku pełni obie role jednocześnie."
+    },
+    {
+      question: "Jak sprawdzić, czy doradca kredytowy jest godny zaufania?",
+      answer: "Sprawdź <strong>opinie w Google</strong> — doradca z kilkudziesięcioma opiniami i średnią powyżej 4,5 to bezpieczny wybór. Zapytaj o liczbę banków w ofercie, doświadczenie i procent pozytywnych decyzji. Oceń komunikację — dobry doradca odpowiada szybko, wyjaśnia zrozumiale i nie naciska na konkretny bank."
+    }
+  ]} />
 </BlogPost>

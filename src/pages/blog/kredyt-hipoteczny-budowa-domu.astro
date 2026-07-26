@@ -1,5 +1,6 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import FAQ from '../../components/FAQ.astro';
 ---
 
 <BlogPost
@@ -94,4 +95,23 @@ import BlogPost from '../../layouts/BlogPost.astro';
     <li>Sporządź realistyczny kosztorys i harmonogram.</li>
     <li>Skonsultuj się z <a href="/doradcy">doradcą kredytowym w Szczecinie</a> — pomoże wybrać bank, który najlepiej pasuje do Twojej sytuacji i zaakceptuje Twój kosztorys.</li>
   </ol>
+
+  <FAQ items={[
+    {
+      question: "Ile transz ma kredyt na budowę domu?",
+      answer: "Zwykle <strong>2–6 transz</strong>, zależnie od banku, kwoty kredytu i harmonogramu budowy. Typowy podział to: fundamenty (15–25%), stan surowy otwarty (25–35%), stan surowy zamknięty (20–25%) i wykończenie (15–25%). Przed każdą kolejną transzą bank weryfikuje postęp prac."
+    },
+    {
+      question: "Czy działka budowlana liczy się jako wkład własny?",
+      answer: "<strong>Tak</strong> — wartość działki jest zaliczana jako wkład własny. Jeśli posiadasz działkę wycenioną na 200 000 zł i planujesz budowę za 500 000 zł, działka stanowi ok. 29% wartości inwestycji — więcej niż wymagane 20%. Nie musisz mieć dodatkowej gotówki."
+    },
+    {
+      question: "Ile czasu bank daje na zakończenie budowy?",
+      answer: "Banki dają zwykle <strong>24–36 miesięcy</strong> od wypłaty pierwszej transzy. W tym okresie obowiązuje karencja — spłacasz tylko odsetki od wypłaconej części kredytu. Po upływie tego terminu zaczynasz spłacać pełne raty, nawet jeśli budowa nie jest ukończona."
+    },
+    {
+      question: "Jakie dokumenty potrzeba do kredytu na budowę domu?",
+      answer: "Trzy grupy dokumentów: <strong>działkowe</strong> (księga wieczysta, akt nabycia, MPZP lub warunki zabudowy), <strong>budowlane</strong> (pozwolenie na budowę, projekt, kosztorys, harmonogram, charakterystyka energetyczna) oraz <strong>finansowe</strong> (zaświadczenie o dochodach lub PIT, wyciągi z konta). Przy dobrze przygotowanej dokumentacji cały proces trwa 6–12 tygodni."
+    }
+  ]} />
 </BlogPost>
