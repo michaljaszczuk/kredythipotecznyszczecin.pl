@@ -34,14 +34,13 @@ const pageUrl = canonical || Astro.url.href;
   <meta name="twitter:description" content={description} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="logo">
-        <span class="logo-icon">🏠</span>
-        <span class="logo-text">KredytHipotecznySzczecin<span class="logo-dot">.pl</span></span>
+        <span class="logo-text">Kredyt<span class="logo-highlight">Hipoteczny</span>Szczecin<span class="logo-dot">.pl</span></span>
       </a>
       <nav class="main-nav">
         <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
@@ -97,26 +96,26 @@ const pageUrl = canonical || Astro.url.href;
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --color-primary: #1a56db;
-      --color-primary-light: #e8eefb;
-      --color-primary-dark: #1042a3;
-      --color-accent: #059669;
-      --color-accent-light: #d1fae5;
+      --color-primary: #0d9488;
+      --color-primary-light: #f0fdfa;
+      --color-primary-dark: #0f766e;
+      --color-accent: #0d9488;
+      --color-accent-light: #ccfbf1;
       --color-bg: #ffffff;
-      --color-bg-alt: #f8fafc;
+      --color-bg-alt: #fafaf9;
       --color-bg-card: #ffffff;
-      --color-text: #1e293b;
-      --color-text-muted: #64748b;
-      --color-border: #e2e8f0;
-      --color-star: #f59e0b;
-      --radius: 12px;
-      --radius-sm: 8px;
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-      --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
-      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
-      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
-      --font: 'Inter', system-ui, -apple-system, sans-serif;
-      --max-width: 1200px;
+      --color-text: #1c1917;
+      --color-text-muted: #78716c;
+      --color-border: #e7e5e4;
+      --color-star: #d97706;
+      --radius: 10px;
+      --radius-sm: 6px;
+      --shadow-sm: 0 1px 2px rgba(28,25,23,0.04);
+      --shadow: 0 1px 3px rgba(28,25,23,0.06), 0 1px 2px rgba(28,25,23,0.04);
+      --shadow-md: 0 4px 12px rgba(28,25,23,0.08);
+      --shadow-lg: 0 8px 24px rgba(28,25,23,0.1);
+      --font: 'Outfit', system-ui, -apple-system, sans-serif;
+      --max-width: 1120px;
     }
 
     html { scroll-behavior: smooth; }
@@ -137,31 +136,30 @@ const pageUrl = canonical || Astro.url.href;
 
     /* Header */
     .site-header {
-      background: var(--color-bg);
       border-bottom: 1px solid var(--color-border);
       position: sticky;
       top: 0;
       z-index: 100;
-      backdrop-filter: blur(8px);
-      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.92);
     }
     .header-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 64px;
+      height: 60px;
     }
     .logo {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: var(--color-text);
+      letter-spacing: -0.02em;
     }
     .logo:hover { color: var(--color-text); }
-    .logo-icon { font-size: 1.4rem; }
-    .logo-dot { color: var(--color-primary); }
+    .logo-highlight { color: var(--color-primary); }
+    .logo-dot { color: var(--color-primary); font-weight: 700; }
 
     .nav-links {
       display: flex;
@@ -171,14 +169,12 @@ const pageUrl = canonical || Astro.url.href;
     .nav-links a {
       color: var(--color-text-muted);
       font-weight: 500;
-      font-size: 0.925rem;
+      font-size: 0.875rem;
       padding: 0.25rem 0;
-      border-bottom: 2px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
+      transition: color 0.2s;
     }
     .nav-links a:hover {
-      color: var(--color-primary);
-      border-bottom-color: var(--color-primary);
+      color: var(--color-text);
     }
 
     .nav-toggle {
@@ -221,8 +217,8 @@ const pageUrl = canonical || Astro.url.href;
 
     /* Footer */
     .site-footer {
-      background: var(--color-bg-alt);
-      border-top: 1px solid var(--color-border);
+      background: #292524;
+      color: #d6d3d1;
       padding: 3rem 0 1.5rem;
       margin-top: 4rem;
     }
@@ -232,29 +228,34 @@ const pageUrl = canonical || Astro.url.href;
       gap: 2rem;
     }
     .footer-col h4 {
-      font-size: 0.95rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
       margin-bottom: 0.75rem;
-      color: var(--color-text);
+      color: #fafaf9;
     }
     .footer-col p {
-      font-size: 0.875rem;
-      color: var(--color-text-muted);
+      font-size: 0.85rem;
+      color: #a8a29e;
       line-height: 1.7;
     }
     .footer-col ul { list-style: none; }
-    .footer-col ul li { margin-bottom: 0.4rem; }
+    .footer-col ul li { margin-bottom: 0.35rem; }
     .footer-col ul a {
-      font-size: 0.875rem;
-      color: var(--color-text-muted);
+      font-size: 0.85rem;
+      color: #a8a29e;
     }
-    .footer-col ul a:hover { color: var(--color-primary); }
+    .footer-col ul a:hover { color: #fafaf9; }
     .footer-bottom {
       margin-top: 2rem;
       padding-top: 1.5rem;
-      border-top: 1px solid var(--color-border);
+      border-top: 1px solid #44403c;
       text-align: center;
     }
-    .footer-bottom p { font-size: 0.8rem; color: var(--color-text-muted); }
+    .footer-bottom p { font-size: 0.8rem; color: #78716c; }
+    .footer-bottom a { color: #a8a29e; }
+    .footer-bottom a:hover { color: #fafaf9; }
 
     @media (max-width: 768px) {
       .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }

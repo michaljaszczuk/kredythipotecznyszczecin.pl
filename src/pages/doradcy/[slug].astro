@@ -61,7 +61,7 @@ const reviewsCount = listing.reviews_count || 0;
 
 <Base
   title={listing.title}
-  description={`${listing.title} — doradca kredytowy w Szczecinie. Ocena ${rating}/5 na podstawie ${reviewsCount} opinii. Adres: ${listing.address}. Sprawdź profil i umów konsultację.`}
+  description={`${listing.title} - doradca kredytowy w Szczecinie. Ocena ${rating}/5 na podstawie ${reviewsCount} opinii. Adres: ${listing.address}. Sprawdź profil i umów konsultację.`}
 >
   <section class="page-header">
     <div class="container">
@@ -215,16 +215,16 @@ const reviewsCount = listing.reviews_count || 0;
 
   .profile-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
   .profile-avatar {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: var(--color-primary-light);
-    color: var(--color-primary);
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius);
+    background: var(--color-primary);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 1.35rem;
     flex-shrink: 0;
   }
   .profile-title { font-size: 1.35rem; font-weight: 700; line-height: 1.3; }

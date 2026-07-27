@@ -64,75 +64,77 @@ function renderStars(rating: number): string {
   .listing-card {
     background: var(--color-bg-card);
     border: 1px solid var(--color-border);
+    border-left: 3px solid transparent;
     border-radius: var(--radius);
     overflow: hidden;
-    transition: box-shadow 0.2s, transform 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s;
   }
   .listing-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+    border-left-color: var(--color-primary);
+    box-shadow: var(--shadow);
   }
   .listing-card-body { padding: 1.25rem; }
 
-  .listing-header { display: flex; align-items: flex-start; gap: 0.875rem; margin-bottom: 1rem; }
+  .listing-header { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem; }
   .listing-avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: var(--color-primary-light);
-    color: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: var(--color-primary);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
     flex-shrink: 0;
   }
   .listing-info { min-width: 0; }
   .listing-title {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     line-height: 1.3;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.15rem;
   }
   .listing-title a { color: var(--color-text); }
   .listing-title a:hover { color: var(--color-primary); }
   .listing-category {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--color-text-muted);
   }
 
   .listing-rating {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    margin-bottom: 0.75rem;
+    gap: 0.35rem;
+    margin-bottom: 0.6rem;
   }
-  .stars { color: var(--color-star); font-size: 0.95rem; letter-spacing: 1px; }
-  .rating-value { font-weight: 600; font-size: 0.9rem; }
-  .reviews-count { font-size: 0.8rem; color: var(--color-text-muted); }
+  .stars { color: var(--color-star); font-size: 0.9rem; letter-spacing: 0.5px; }
+  .rating-value { font-weight: 600; font-size: 0.85rem; }
+  .reviews-count { font-size: 0.75rem; color: var(--color-text-muted); }
 
-  .listing-meta { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+  .listing-meta { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.75rem; }
   .meta-item {
     display: flex;
     align-items: flex-start;
-    gap: 0.5rem;
-    font-size: 0.85rem;
+    gap: 0.4rem;
+    font-size: 0.8rem;
     color: var(--color-text-muted);
   }
-  .meta-item svg { flex-shrink: 0; margin-top: 2px; }
+  .meta-item svg { flex-shrink: 0; margin-top: 1px; width: 14px; height: 14px; }
   .meta-item a { color: var(--color-text-muted); }
   .meta-item a:hover { color: var(--color-primary); }
 
   .listing-cta {
     display: inline-block;
-    padding: 0.5rem 1.25rem;
-    background: var(--color-primary);
-    color: #fff !important;
+    padding: 0.4rem 1rem;
+    background: transparent;
+    color: var(--color-primary);
+    border: 1.5px solid var(--color-primary);
     border-radius: var(--radius-sm);
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: background 0.2s;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
   }
-  .listing-cta:hover { background: var(--color-primary-dark); }
+  .listing-cta:hover { background: var(--color-primary); color: #fff; }
 </style>
