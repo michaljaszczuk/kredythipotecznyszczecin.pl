@@ -40,6 +40,7 @@ const pageUrl = canonical || Astro.url.href;
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="logo">
+        <span class="logo-map" aria-hidden="true"></span>
         <span class="logo-text">Kredyt<span class="logo-highlight">Hipoteczny</span>Szczecin<span class="logo-dot">.pl</span></span>
       </a>
       <nav class="main-nav">
@@ -160,6 +161,21 @@ const pageUrl = canonical || Astro.url.href;
     .logo:hover { color: var(--color-text); }
     .logo-highlight { color: var(--color-primary); }
     .logo-dot { color: var(--color-primary); font-weight: 700; }
+    .logo-map {
+      display: none;
+      width: 20px;
+      aspect-ratio: 964 / 971;
+      background-color: var(--color-primary);
+      -webkit-mask-image: url('/szczecin-borders.svg');
+      mask-image: url('/szczecin-borders.svg');
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-position: center;
+      mask-position: center;
+      flex-shrink: 0;
+    }
 
     .nav-links {
       display: flex;
@@ -196,6 +212,7 @@ const pageUrl = canonical || Astro.url.href;
     }
 
     @media (max-width: 768px) {
+      .logo-map { display: block; margin-right: 0.4rem; }
       .nav-toggle { display: flex; }
       .nav-links {
         display: none;
