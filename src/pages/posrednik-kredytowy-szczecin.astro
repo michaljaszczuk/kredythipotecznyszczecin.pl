@@ -1,0 +1,144 @@
+---
+import Base from '../layouts/Base.astro';
+import ListingCard from '../components/ListingCard.astro';
+import FAQ from '../components/FAQ.astro';
+import listings from '../data/listings.json';
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/ł/g, 'l')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '')
+    .substring(0, 80);
+}
+
+const sortedListings = [...listings].sort((a: any, b: any) => (b.reviews_count || 0) - (a.reviews_count || 0));
+---
+
+<Base
+  title="Pośrednik kredytowy Szczecin - lista i ranking"
+  description={`Lista ${listings.length} pośredników i doradców kredytowych w Szczecinie z opiniami. Sprawdź, jak zweryfikować wpis w rejestrze KNF przed podpisaniem umowy.`}
+>
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Strona główna</a> <span>/</span> <span>Pośrednik kredytowy Szczecin</span>
+      </nav>
+      <h1>Pośrednik kredytowy Szczecin</h1>
+      <p class="page-subtitle">
+        Formalnie <strong>pośrednik kredytowy</strong> to podmiot wpisany do rejestru Komisji Nadzoru Finansowego (KNF), uprawniony do prezentowania w Twoim imieniu ofert kredytowych z wielu banków.
+        W praktyce ten termin bywa używany zamiennie z „doradcą kredytowym” — pełne wyjaśnienie różnicy znajdziesz w naszym <a href="/blog/doradca-kredytowy-szczecin-poradnik#doradca-kredytowy-a-posrednik-roznica">poradniku o wyborze doradcy</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="verify-box">
+        <h2>Jak zweryfikować pośrednika kredytowego przed podpisaniem umowy?</h2>
+        <p>Zanim zdecydujesz się na współpracę, sprawdź, czy dana osoba lub firma faktycznie figuruje w <strong>Rejestrze Pośredników Kredytowych</strong> prowadzonym przez KNF. Zajmuje to dwie minuty:</p>
+        <ol>
+          <li>Wejdź na stronę <a href="https://rpk.knf.gov.pl/" target="_blank" rel="noopener noreferrer">rpk.knf.gov.pl</a> — publiczny rejestr KNF.</li>
+          <li>Wyszukaj firmę po nazwie lub numerze NIP.</li>
+          <li>Sprawdź, czy wpis jest aktywny i czy zakres działalności obejmuje pośrednictwo kredytu hipotecznego.</li>
+        </ol>
+        <p>Brak wpisu w rejestrze nie zawsze oznacza oszustwo — część osób pracuje jako pracownicy etatowi banku lub agenci jednego pośrednika — ale w przypadku niezależnych doradców jest to podstawowa weryfikacja, którą warto wykonać przed powierzeniem im swoich danych finansowych.</p>
+      </div>
+
+      <h2 class="listings-title">Pośrednicy i doradcy kredytowi w Szczecinie ({listings.length})</h2>
+      <div class="listings-grid">
+        {sortedListings.map((listing: any) => (
+          <ListingCard
+            title={listing.title}
+            slug={slugify(listing.title)}
+            address={listing.address}
+            phone={listing.phone || ''}
+            rating={listing.rating || 0}
+            reviewsCount={listing.reviews_count || 0}
+            category={listing.category || ''}
+          />
+        ))}
+      </div>
+      <div class="section-cta">
+        <a href="/doradcy" class="btn btn-outline">Zobacz pełny katalog z sortowaniem i filtrami →</a>
+      </div>
+
+      <FAQ items={[
+        {
+          question: "Czy pośrednik kredytowy musi być zarejestrowany w KNF?",
+          answer: "Tak, podmioty prowadzące pośrednictwo kredytu hipotecznego w Polsce muszą być wpisane do <strong>Rejestru Pośredników Kredytowych</strong> prowadzonego przez Komisję Nadzoru Finansowego. Wpis możesz sprawdzić bezpłatnie na <a href=\"https://rpk.knf.gov.pl/\" target=\"_blank\" rel=\"noopener noreferrer\">rpk.knf.gov.pl</a>, wpisując nazwę firmy lub NIP."
+        },
+        {
+          question: "Czy pośrednik kredytowy pobiera opłatę od klienta?",
+          answer: "W zdecydowanej większości przypadków nie — pośrednik zarabia prowizję wypłacaną przez bank po podpisaniu umowy kredytowej. Nieliczni niezależni doradcy pobierają dodatkowe honorarium (zwykle 1 000–5 000 zł) w zamian za pełną niezależność w rekomendacjach. Zawsze pytaj o model wynagrodzenia przed rozpoczęciem współpracy."
+        },
+        {
+          question: "Czym różni się pośrednik kredytowy od doradcy kredytowego?",
+          answer: "Formalnie <strong>pośrednik</strong> to podmiot zarejestrowany w KNF, uprawniony do prezentowania ofert bankowych w imieniu klienta. <strong>Doradca</strong> to potoczne określenie osoby, która pomaga wybrać najlepszą ofertę. W praktyce większość firm na rynku pełni obie role jednocześnie — więcej o tej różnicy pisaliśmy w <a href=\"/blog/doradca-kredytowy-szczecin-poradnik\">poradniku o wyborze doradcy kredytowego</a>."
+        },
+        {
+          question: "Co zrobić, jeśli pośrednik nie figuruje w rejestrze KNF?",
+          answer: "Zapytaj wprost, w jakim modelu działa — może być etatowym pracownikiem banku lub agentem działającym pod wpisem innego, zarejestrowanego podmiotu. Jeśli nie potrafi tego wyjaśnić lub uniknie odpowiedzi, potraktuj to jako sygnał ostrzegawczy i rozważ współpracę z kimś innym z naszego katalogu."
+        }
+      ]} />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-header {
+    background: var(--color-bg-alt);
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .breadcrumb {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+  }
+  .breadcrumb a { color: var(--color-text-muted); }
+  .breadcrumb a:hover { color: var(--color-primary); }
+  .breadcrumb span { margin: 0 0.3rem; }
+
+  .page-header h1 { font-size: 1.75rem; margin-bottom: 0.75rem; }
+  .page-subtitle { color: var(--color-text-muted); font-size: 1rem; line-height: 1.7; max-width: 760px; }
+
+  .section { padding: 2.5rem 0; }
+
+  .verify-box {
+    background: var(--color-primary-light);
+    border: 1px solid var(--color-primary);
+    border-left-width: 3px;
+    border-radius: var(--radius);
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .verify-box h2 { font-size: 1.15rem; margin-bottom: 0.75rem; }
+  .verify-box p { color: var(--color-text-muted); line-height: 1.7; margin-bottom: 0.75rem; }
+  .verify-box p:last-child { margin-bottom: 0; }
+  .verify-box ol { margin: 0 0 0.75rem 1.25rem; color: var(--color-text-muted); line-height: 1.8; }
+
+  .listings-title { font-size: 1.35rem; margin-bottom: 1.25rem; letter-spacing: -0.01em; }
+  .listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+  }
+  .section-cta { text-align: center; margin-top: 2rem; }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.875rem;
+    background: transparent;
+    color: var(--color-primary);
+    border: 1.5px solid var(--color-primary);
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-outline:hover { background: var(--color-primary); color: #fff; }
+</style>
